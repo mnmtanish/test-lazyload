@@ -1,5 +1,19 @@
 # TestLazyload
 
+This is an experiment to check how feature modules work with Angular CLI based projects. The web app contains the following pages and their dependencies:
+
+ - / -> feature-x, feature-y
+ - /page-a -> feature-x, feature-a
+ - /page-x -> feature-x, feature-y
+
+## Modules
+
+ - feature-x -> page-x, page-h, comp-x
+ - feature-y -> comp-y
+ - feature-a -> page-a
+
+# Angular CLI Project
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
 
 ## Development server
