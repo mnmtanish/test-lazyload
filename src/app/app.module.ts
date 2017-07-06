@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FeatureXModule } from './feature-x/feature-x.module';
-import { FeatureYModule } from './feature-y/feature-y.module';
 
 @NgModule({
   declarations: [
@@ -12,8 +10,6 @@ import { FeatureYModule } from './feature-y/feature-y.module';
   ],
   imports: [
     BrowserModule,
-    FeatureXModule,
-    FeatureYModule,
     AppRoutingModule,
   ],
   providers: [],
