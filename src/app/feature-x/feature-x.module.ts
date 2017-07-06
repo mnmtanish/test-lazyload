@@ -5,12 +5,15 @@ import { FeatureXRoutingModule } from './feature-x-routing.module';
 import { PageXComponent } from './page-x/page-x.component';
 import { PageHComponent } from './page-h/page-h.component';
 import { CompXComponent } from './comp-x/comp-x.component';
+import { FeatureYModule } from '../feature-y/feature-y.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    FeatureXRoutingModule
+    FeatureYModule,
+    FeatureXRoutingModule,
   ],
-  declarations: [PageXComponent, PageHComponent, CompXComponent]
+  declarations: [PageXComponent, PageHComponent, CompXComponent],
+  exports: [PageXComponent, PageHComponent, CompXComponent]
 })
 export class FeatureXModule { }

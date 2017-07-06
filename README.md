@@ -3,14 +3,14 @@
 This is an experiment to check how feature modules work with Angular CLI based projects. The web app contains the following pages and their dependencies:
 
  - / -> feature-x, feature-y
- - /page-a -> feature-x, feature-a
  - /page-x -> feature-x, feature-y
+ - /page-a -> feature-x, feature-a
 
 ## Modules
 
- - feature-x -> page-x, page-h, comp-x
+ - feature-x -> page-x, page-h, comp-x; (uses feature-y/comp-y)
  - feature-y -> comp-y
- - feature-a -> page-a
+ - feature-a -> page-a; (uses feature-x/comp-x)
 
 # Angular CLI Project
 

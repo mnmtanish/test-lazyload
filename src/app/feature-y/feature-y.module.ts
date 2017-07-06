@@ -9,6 +9,7 @@ import { CompYComponent } from './comp-y/comp-y.component';
     CommonModule,
     FeatureYRoutingModule
   ],
-  declarations: [CompYComponent]
+  declarations: [CompYComponent],
+  exports: [CompYComponent]
 })
 export class FeatureYModule { }
