@@ -6,6 +6,7 @@ import { CompZComponent } from './comp-z/comp-z.component';
   imports: [
     CommonModule
   ],
-  declarations: [CompZComponent]
+  declarations: [CompZComponent],
+  exports: [CompZComponent]
 })
 export class FeatureZModule { }
